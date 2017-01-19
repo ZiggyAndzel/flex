@@ -1,0 +1,354 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic);
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {box-sizing: border-box;}
+
+body {
+	margin: 0;	
+	font-size: 14px;
+	color: #313234;
+	font-family: 'Open Sans', sans-serif;
+}
+
+section {
+	margin-top: 50px;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+h1, h2, h3 {
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+}
+
+.row {
+	text-align: center;
+}
+
+.container {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+/*HEADER*/
+
+header {
+	width: 100%;
+	height: 50px;
+	background: #313234;
+}
+
+header > nav img {
+  padding: 10px 0;
+}
+
+header > nav ul {
+	float: right;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+header > nav ul > li {
+  	display: inline-block;
+}
+
+header > nav ul > li > a {
+  	line-height: 50px;
+	display: block;
+  	color: #fff;
+  	padding: 0 20px;
+  	text-decoration: none;
+  	text-transform: uppercase;
+}
+
+header > nav ul > li > a:hover {
+  	background: #00c7e8;
+}
+
+/*JUMBOTRON*/
+
+.hero {
+	width: 100%;
+	height: calc(100vh - 50px);
+	background: url(https://images.unsplash.com/photo-1427435150519-42d9bcd0aa81?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=5c96f59d127b312a5c2f82b04b3566c2
+);
+	background-size: cover;
+	background-position: center;
+}
+
+.slogan {
+	float: right;
+	margin-top: 35vh;
+	width: 450px;
+	background: rgba(0,0,0,0.4);
+	text-align: left;
+}
+
+.slogan h1 {
+	margin: 30px;
+	color: #fff;
+	line-height: 28px;
+	font-weight: 100;
+}
+
+.slider {
+	width: 100%;
+}
+
+.slider ul {
+	width: 200px;
+	padding-top: 80vh;
+	margin: 0 auto;
+	list-style: none;
+}
+
+.slider ul li {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 50%;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.slider ul li:hover {
+	background: #00c7e8;
+}
+
+/*BENEFITS*/
+
+.benefits .fa {
+	width: 120px;
+	height: 120px;
+	background: #313234;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 80px;
+	line-height: 120px;
+	color: #fff;
+	cursor: pointer;
+	transition: 0.2s;
+}
+
+.benefits .fa:hover {
+	background:	#00c7e8;
+	transition: 0.2s;
+}
+
+.benefits .fa:hover + h2 {
+	color:	#00c7e8;
+	transition: 0.2s;
+}
+
+/*GALLERY*/
+
+.gallery > .row {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.gallery .row [class*="col"] {
+	height: 250px;
+    overflow: hidden;
+    float: left;
+    display: block;
+    position: relative;
+}
+
+.gallery img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+
+.layer > i,
+.layer a {
+    width: 40px;
+	height: 40px;
+	background: #fff;
+	line-height: 40px;
+	margin-top: 105px;
+	opacity: 0;
+    border-radius: 10px;
+}
+
+.gallery .row [class*="col"] p {
+	display: none;	
+}
+
+.gallery .row [class*="col"] .layer {
+	width: 100%;
+	height: 100%;
+	color: #000;
+	position: absolute;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	transition: 0.4s;
+	
+}
+
+.gallery > .row > [class*="col"]:hover > .layer {
+	opacity: 1;
+	transition: 0.4s;
+}
+
+.gallery > .row > [class*="col"]:hover > .layer > i  {
+	opacity: 1;
+	transition: 0.4s;
+	display: inline-block;
+}
+
+.gallery > .row > [class*="col"]:hover > .layer > a  {
+	opacity: 1;
+	transition: 0.4s;
+	display: inline-block;
+}
+
+/*TEAM*/
+
+.team .person {
+	position: relative;
+	margin: 0 auto;
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	background-position: center;
+}
+
+.team .person h3 {
+	position: absolute;
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	margin-top: 0;
+	line-height: 150px;
+	color: #fff;
+	cursor: pointer;
+	opacity: 0;
+	transition: 0.3s;
+}
+
+.team .person:hover h3 {
+	background: rgba(0, 0, 0, 0.6);
+	opacity: 1;
+	transition: 0.3s;
+}
+
+.team p {
+	display: none;	
+}
+
+.img1 {
+	background: url('http://ic.pics.livejournal.com/elschmo/7859641/51824/51824_original.jpg');
+}
+
+.img2 {
+	background: url('http://cdn.trendhunterstatic.com/thumbs/nerve-magazine-twenty-sexiest-ugly-people.jpeg');
+}
+
+.img3 {
+	background: url('http://bbsimg.ngfiles.com/1/2590000/ngbbs40ded82a31598.jpg');
+}
+
+.img4 {
+	background: url('http://ic.pics.livejournal.com/elschmo/7859641/53756/53756_original.jpg');
+}
+
+/*AWESOME TITLE*/
+
+.awesome-title {
+	background: #313234;
+	width: 100%;
+}
+.tablet-frame {
+	background: url('http://www.pngmart.com/files/3/IPad-Tablet-Transparent-Background.png');
+	height: 250px;
+	margin-top: 50px;
+	background-size: cover;
+	position: relative;
+}
+
+.awesome-title .col-8 {
+	float: right;
+	text-align: left;
+	padding-top: 50px;
+	padding-left: 50px;
+	color: #fff;
+}
+
+/*SOME NUMBERS*/
+
+.some-numbers h1 {
+	margin: 0 auto;
+	display: block;
+	width: 100px;
+	height: 100px;
+	border: 2px solid #00c7e8;
+	border-radius: 50%;
+	font-size: 30px;
+	line-height: 100px;
+}
+
+.some-numbers h3 {
+	color: #00c7e8;
+}
+
+/*CONTACT*/
+
+.contact {
+	background: #313234;
+	color: #fff;
+	
+}
+.contact .row {
+	font-size: 12px;
+	text-align: left;
+}
+
+.contact .col-4 {
+	padding-right: 40px;
+}
+
+.social {
+	float: left;
+	font-size: 15px;
+	text-align: center;
+}	
+.contact .social i {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	margin-right: 10px;
+	border-radius: 50%;
+	background-color: #dd4001;
+}
+
+.contact .social i:hover {
+	background-color: #962e00;	
+	cursor: pointer;
+}
+
+/*FOOTER*/
+
+footer {
+	width: 100%;
+	height: 50px;
+	background: #000;
+	text-align: center;
+}
+
+footer p {
+	color: #fff;
+	margin: 0;
+	line-height: 50px;
+}
